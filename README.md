@@ -165,6 +165,11 @@ You can deploy an instance of Quant UX with one click on RepoCloud.
  
 [![Deploy](https://d16t0pc4846x52.cloudfront.net/deploylobe.svg)](https://repocloud.io/details/?app_id=302)
 
+### Hostinger
+You can deploy an instance of Quant UX with one click on Hostinger.
+ 
+[![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostinger.com/vps/docker-hosting?compose_url=https://raw.githubusercontent.com/KlausSchaefers/quant-ux/refs/heads/master/docker/docker-compose.yml)
+
 ## Kubernets
 
 You can find a kubernets configuration here https://github.com/engmsilva/quant-ux-k8s/tree/master/k8s
