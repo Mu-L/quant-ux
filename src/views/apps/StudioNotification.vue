@@ -77,7 +77,7 @@
    
                     <CheckBox :value="isAutoOpen" :label="$t('app.notification_no_auto')" @change="setAutoOpen"/>
 
-                    <button class="MatcButton MatcButtonPrimary" @click="close">
+                    <button class="MatcButton MatcButtonPrimary" @click.stop="close">
                         {{$t('common.close')}}
                     </button>
                 </div>
@@ -99,6 +99,7 @@ import QIcon from "page/QIcon";
 import ZoomDialog from 'common/ZoomDialog'
 import * as UIUtil from '../../util/UIUtil'
 import CheckBox from 'common/CheckBox'
+import AnalyticsService from "services/AnalyticsService";
 
 export default {
     name: "StudioNotification",
@@ -176,6 +177,7 @@ export default {
         },
         setAutoOpen (value) {
             this.notifcationService.setAutoOpen(value)
+            this.isAutoOpen = value
         },
         convertNotification (n) {
             const result = {
