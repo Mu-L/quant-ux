@@ -99,7 +99,6 @@ import QIcon from "page/QIcon";
 import ZoomDialog from 'common/ZoomDialog'
 import * as UIUtil from '../../util/UIUtil'
 import CheckBox from 'common/CheckBox'
-import AnalyticsService from "services/AnalyticsService";
 
 export default {
     name: "StudioNotification",
